@@ -15,12 +15,6 @@ class Controlleur extends AbstractController
         return $this->render("secretaire/index.html.twig");
     }
 
-    #[Route("/sss", name : "indesx")]
-    public function indesx(): Response
-    {
-        return $this->render("secretaire/index.html.twig");
-    }
-
 
     #[Route("/add-parents/", name : "add-parents")]
     public function addParent(): Response
