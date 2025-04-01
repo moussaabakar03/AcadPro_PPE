@@ -15,12 +15,19 @@ class Controlleur extends AbstractController
         return $this->render("secretaire/index.html.twig");
     }
 
+    #[Route("/add-paddrents/", name : "add-pardents")]
+    public function addPadrent(): Response
+    {
+        return $this->render("secretddaire/add-parendts.html.twig");
+    }
 
     #[Route("/add-parents/", name : "add-parents")]
     public function addParent(): Response
     {
         return $this->render("secretaire/add-parents.html.twig");
     }
+
+
 
     #[Route("/add-teacher/", name : "add-teacher")]
     public function addTeacher(): Response
